@@ -11,7 +11,7 @@ ENV MAVEN_URI=maven/maven-${MAVEN_MAJOR}/${MAVEN_VERSION}/binaries \
 
 # Download and install Maven
 RUN cd /tmp && \
-    apk add --no-cache jq gnupg && \
+    apk add --no-cache git jq gnupg && \
     eval $(gpg-agent --daemon) && \
     MIRROR=`curl -sS https://www.apache.org/dyn/closer.cgi\?as_json\=1 | jq -r '.preferred'` && \
     curl -sSLO "${MIRROR}${MAVEN_URI}/${MAVEN_FILE}" && \

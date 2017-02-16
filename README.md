@@ -13,7 +13,7 @@ docker build -t rawmind/alpine-maven:<version> .
 
 ## Versions
 
-- `3.3.9` [(Dockerfile)](https://github.com/rawmind0/alpine-maven/blob/3.3.9/Dockerfile)
+- `3.3.9-1` [(Dockerfile)](https://github.com/rawmind0/alpine-maven/blob/3.3.9-1/Dockerfile)
 
 
 ## Usage
